@@ -1,3 +1,131 @@
+body {
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.logo-title img {
+  width: 48px;
+  height: 56.01px;
+}
+.title {
+  color: #ff5400;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  gap: 44px;
+}
 .menu a {
   text-decoration: none;
+  color: rgb(66, 66, 71);
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.menu a:hover {
+  color: #ff5400;
+}
+.hamburgerMenu {
+  display: none;
+}
+.exploreTravel {
+  position: relative;
+  color: white;
+}
+.exploreTravel img {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.exploreDetails {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.exploreDetails h1 {
+  margin-bottom: 30px;
+}
+.exploreInput {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 20px;
+  margin-left: 50px;
+  padding: 10px;
+}
+.exploreInput input {
+  width: 170px;
+  height: 30px;
+  border-radius: 5px;
+}
+.exploreInput button {
+  width: 178px;
+  height: 30px;
+  background-color: #ff5400;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .logo-title img {
+    width: 28.72px;
+    height: 33.52px;
+  }
+  .logo-title h1 {
+    font-size: 21.54px;
+  }
+  .menu a {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: block;
+  }
+  .hamburger {
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  .exploreTravel {
+    overflow: hidden;
+  }
+
+  .exploreTravel img {
+    width: 300%;
+    margin-left: -100%;
+    border-radius: 20px;
+  }
+  .exploreDetails {
+    top: 40%;
+  }
+  .exploreInput {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    gap: 10px;
+  }
 }
