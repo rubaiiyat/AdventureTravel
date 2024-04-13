@@ -50,6 +50,7 @@ body {
 .exploreTravel img {
   margin-top: 10px;
   border-radius: 10px;
+  filter: brightness(50%);
 }
 .exploreDetails {
   width: 80%;
@@ -80,12 +81,42 @@ body {
 }
 .exploreInput button {
   width: 178px;
-  height: 30px;
+  height: 35px;
   background-color: #ff5400;
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
+
+/* popular tours started */
+.popularTours {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: start;
+}
+
+.popularToursDetails h1,
+.popularToursDetails p,
+.popularToursDetails li {
+  margin-top: 20px;
+}
+.popularTours button {
+  background-color: #ff5400;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.popularTours img {
+  width: 540;
+  border-radius: 10px;
+}
+/* popular tours Ended */
 @media screen and (max-width: 600px) {
   body {
     margin-left: 20px;
@@ -127,5 +158,14 @@ body {
     flex-wrap: wrap;
     margin-left: 0;
     gap: 10px;
+  }
+
+  .popularTours {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .popularTours img {
+    width: 100%;
   }
 }
