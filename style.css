@@ -89,7 +89,6 @@ body {
   cursor: pointer;
 }
 
-/* popular tours started */
 .popularTours {
   margin-top: 40px;
   display: flex;
@@ -113,10 +112,28 @@ body {
   cursor: pointer;
 }
 .popularTours img {
-  width: 540;
+  width: 540px;
   border-radius: 10px;
 }
-/* popular tours Ended */
+.imageContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.imageContainer img {
+  padding-top: 15px;
+  filter: brightness(90%);
+  color: white;
+}
+.imgName {
+  position: relative;
+  color: white;
+}
+.name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 @media screen and (max-width: 600px) {
   body {
     margin-left: 20px;
@@ -166,6 +183,13 @@ body {
     gap: 20px;
   }
   .popularTours img {
+    width: 100%;
+  }
+  .imageContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .imageContainer img {
     width: 100%;
   }
 }
