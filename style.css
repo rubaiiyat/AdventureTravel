@@ -134,6 +134,119 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.whyChooseSection {
+  margin-top: 50px;
+}
+.whyChoose {
+  width: 60%;
+  margin: auto;
+}
+
+.chooseReason {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.fa-solid {
+  font-size: 50px;
+}
+.Handpicked {
+  width: 50%;
+  background-color: #eedecf;
+  padding: 20px;
+  text-align: start;
+  border-radius: 10px;
+}
+.Service {
+  width: 50%;
+  background-color: #bee4ec;
+  padding: 20px;
+  text-align: start;
+  border-radius: 10px;
+}
+.bestPrice {
+  width: 50%;
+  margin: auto;
+  background-color: #f8e2e2;
+  text-align: start;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.newLetterSection {
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+}
+.newLetterDescription {
+  padding: 30px;
+  border: 2px solid #ffa97f;
+  height: 355px;
+  border-radius: 10px;
+}
+.newLetterInput input {
+  margin-top: 30px;
+  height: 30px;
+  width: 300px;
+}
+.newLetterInput button {
+  margin-top: 30px;
+  height: 34px;
+  width: 305px;
+  background-color: #ff5400;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.discount {
+  position: absolute;
+  left: 80%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  background-color: #ff5400;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transform: rotate(-30deg);
+}
+
+.footer {
+  background-color: #f3f3f3;
+  margin-top: 40px;
+  margin-left: -200px;
+  margin-right: -200px;
+}
+
+.footerLogo {
+  margin-top: 100px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.footerLogo img {
+  width: 48px;
+  height: 56.01px;
+}
+.socialMedia {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.socialMedia a {
+  color: black;
+  padding: 10px;
+}
+.copyright {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
 @media screen and (max-width: 600px) {
   body {
     margin-left: 20px;
@@ -191,5 +304,41 @@ body {
   }
   .imageContainer img {
     width: 100%;
+  }
+  .chooseReason {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Handpicked,
+  .Service,
+  .bestPrice {
+    width: 90%;
+  }
+  .newLetterSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .newsLetterImg img {
+    width: 100%;
+  }
+  .newLetterDescription {
+    width: 100%;
+  }
+  .newLetterInput input {
+    width: 100%;
+  }
+  .newLetterInput button {
+    width: 100%;
+  }
+  .discount {
+    position: absolute;
+    left: 43%;
+    top: 75%;
+  }
+  .footer {
+    background-color: #f3f3f3;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
   }
 }
